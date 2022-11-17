@@ -21,7 +21,6 @@ excel_path = join(dirname_excel,listdir(dirname_excel)[0])
 
 df = pd.read_csv(excel_path,delimiter=";")
 
-
 def plot_id_card(solution_name,df):
     # number of variable
     categories=list(df)[1:-2]
