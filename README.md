@@ -6,7 +6,7 @@ This project is a promotion project aiming to offer to the user the possibility 
 ## How to start the project 
 In your Terminal
 ```
-python3 -m pip install --user --upgrade pip
+python3 -m pip install --user virtualenv
 cd path_of_the_repo
 virtualenv venv
 source ./bin/activate
