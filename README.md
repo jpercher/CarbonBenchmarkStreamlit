@@ -6,7 +6,10 @@ This project is a promotion project aiming to offer to the user the possibility 
 ## How to start the project 
 
 ```
+python3 -m pip install --user --upgrade pip
 cd path_of_the_repo
+virtualenv venv
+source ./bin/activate
 pip install -r requirements.txt
 streamlit run streamlit_app.py
 ```
