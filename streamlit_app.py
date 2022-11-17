@@ -1,18 +1,15 @@
 
 import streamlit as st
-from PIL import Image
 import os
 from os import listdir
 from os.path import isfile, join
 import pandas as pd
 import matplotlib.pyplot as plt
 from math import pi, dist,sqrt
-import random as rd
 import numpy as np
 from copy import deepcopy 
 
 dirname = os.path.dirname(__file__)
-dirname_image = join(dirname,"images")
 dirname_excel = join(join(dirname,"excel"))
 
 ds_path = join(dirname_excel, '.DS_Store')
@@ -24,9 +21,6 @@ excel_path = join(dirname_excel,listdir(dirname_excel)[0])
 
 df = pd.read_csv(excel_path,delimiter=";")
 
-files_path = [join(dirname_image, f) for f in listdir(dirname_image) if isfile(join(dirname_image, f)) and f != '.DS_Store']
-
-res = [Image.open(f) for f in files_path]
 
 def plot_id_card(solution_name,df):
     # number of variable
